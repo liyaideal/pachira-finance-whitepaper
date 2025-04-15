@@ -511,6 +511,171 @@
         
             <p>我们的模型表明，这些因素共同为资产创造平均15-25%的流动性溢价。</p>
         </div>
+
+        <div class="content-section" id="defi-lending">
+            <h2>5. 去中心化借贷的价值流</h2>
+            
+            <h3>5.1 利率模型与价值捕获</h3>
+            
+            <p>Pachira 的借贷利率模型基于资本利用率，动态调整以优化系统效率:</p>
+            
+            <div class="highlight-box">
+                <h4>利率计算公式:</h4>
+                <div class="formula">
+                    借款利率 = 基础利率 + 利用率因子 × 当前利用率^2
+                </div>
+            </div>
+        
+            <div class="chart-container">
+                <svg class="svg-chart" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+                    <!-- 背景网格 -->
+                    <g fill="none" stroke="#e0e0e0" stroke-width="1">
+                        <line x1="100" y1="250" x2="700" y2="250"></line>
+                        <line x1="100" y1="200" x2="700" y2="200"></line>
+                        <line x1="100" y1="150" x2="700" y2="150"></line>
+                        <line x1="100" y1="100" x2="700" y2="100"></line>
+                        <line x1="100" y1="50" x2="700" y2="50"></line>
+                    </g>
+                    
+                    <!-- Y轴 -->
+                    <line x1="100" y1="50" x2="100" y2="250" stroke="#333" stroke-width="2"></line>
+                    <text x="50" y="255" text-anchor="middle" font-size="12">0%</text>
+                    <text x="50" y="205" text-anchor="middle" font-size="12">5%</text>
+                    <text x="50" y="155" text-anchor="middle" font-size="12">10%</text>
+                    <text x="50" y="105" text-anchor="middle" font-size="12">15%</text>
+                    <text x="50" y="55" text-anchor="middle" font-size="12">20%</text>
+                    <text x="50" y="20" text-anchor="middle" font-size="12" font-weight="bold">利率</text>
+                    
+                    <!-- X轴 -->
+                    <line x1="100" y1="250" x2="700" y2="250" stroke="#333" stroke-width="2"></line>
+                    <text x="100" y="270" text-anchor="middle" font-size="12">0%</text>
+                    <text x="220" y="270" text-anchor="middle" font-size="12">20%</text>
+                    <text x="340" y="270" text-anchor="middle" font-size="12">40%</text>
+                    <text x="460" y="270" text-anchor="middle" font-size="12">60%</text>
+                    <text x="580" y="270" text-anchor="middle" font-size="12">80%</text>
+                    <text x="700" y="270" text-anchor="middle" font-size="12">100%</text>
+                    <text x="400" y="290" text-anchor="middle" font-size="12" font-weight="bold">资本利用率</text>
+                    
+                    <!-- 借款利率曲线 -->
+                    <path d="M 100 240
+                             L 340 220
+                             Q 460 200 580 150
+                             Q 640 120 700 70" 
+                          fill="none" stroke="#1E5631" stroke-width="3"></path>
+                    <text x="670" y="70" font-size="12" fill="#1E5631" font-weight="bold">借款利率</text>
+                    
+                    <!-- 存款利率曲线 -->
+                    <path d="M 100 250
+                             L 340 240
+                             Q 460 230 580 190
+                             Q 640 170 700 130" 
+                          fill="none" stroke="#1A3A5E" stroke-width="3"></path>
+                    <text x="670" y="130" font-size="12" fill="#1A3A5E" font-weight="bold">存款利率</text>
+                    
+                    <!-- 利差区域 -->
+                    <path d="M 100 240
+                             L 340 220
+                             Q 460 200 580 150
+                             Q 640 120 700 70
+                             L 700 130
+                             Q 640 170 580 190
+                             Q 460 230 340 240
+                             L 100 250
+                             Z" 
+                          fill="#D4AF37" opacity="0.2"></path>
+                    <text x="400" y="190" font-size="14" fill="#D4AF37" font-weight="bold">平台价值捕获</text>
+                    
+                    <!-- 利用率区域指示 -->
+                    <line x1="340" y1="50" x2="340" y2="250" stroke="#999" stroke-width="1" stroke-dasharray="5,5"></line>
+                    <text x="340" y="40" font-size="12" text-anchor="middle">低利用率区域</text>
+                    
+                    <line x1="580" y1="50" x2="580" y2="250" stroke="#999" stroke-width="1" stroke-dasharray="5,5"></line>
+                    <text x="460" y="40" font-size="12" text-anchor="middle">中等利用率区域</text>
+                    <text x="640" y="40" font-size="12" text-anchor="middle">高利用率区域</text>
+                </svg>
+            </div>
+        
+            <p>在基准情况下:</p>
+            <ul>
+                <li>0-50% 利用率: 缓慢增长曲线</li>
+                <li>50-80% 利用率: 中等增长曲线</li>
+                <li>80-100% 利用率: 快速增长曲线</li>
+            </ul>
+        
+            <div class="highlight-box">
+                <h4>平台价值捕获:</h4>
+                <div class="formula">
+                    平台收益 = 借款利率 - 存款利率 - 风险成本
+                </div>
+            </div>
+        
+            <p>平均目标利差: 1-2%</p>
+        
+            <h3>5.2 抵押资产效率</h3>
+            
+            <p>实体资产支持的通证具有独特的抵押特性，影响着整个借贷经济模型:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>资产类型</th>
+                        <th>最佳抵押率</th>
+                        <th>清算阈值</th>
+                        <th>清算折扣</th>
+                        <th>借款利率影响</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>商业地产通证</td>
+                        <td>70%</td>
+                        <td>80%</td>
+                        <td>5%</td>
+                        <td>-0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>可再生能源通证</td>
+                        <td>75%</td>
+                        <td>82%</td>
+                        <td>4%</td>
+                        <td>-0.7%</td>
+                    </tr>
+                    <tr>
+                        <td>稳定币</td>
+                        <td>90%</td>
+                        <td>95%</td>
+                        <td>1%</td>
+                        <td>基准</td>
+                    </tr>
+                    <tr>
+                        <td>主流加密资产</td>
+                        <td>50%</td>
+                        <td>65%</td>
+                        <td>10%</td>
+                        <td>+1.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p>通过这种分级抵押模型，平台能够同时:</p>
+            <ul>
+                <li>最大化资本效率</li>
+                <li>最小化清算风险</li>
+                <li>为不同风险偏好的用户提供选择</li>
+            </ul>
+        
+            <h3>5.3 借贷-通证化协同效应</h3>
+            
+            <p>两个业务引擎之间的协同效应创造额外的经济价值:</p>
+            
+            <ol>
+                <li><strong>借贷需求推动通证化资产需求</strong>: 通证作为优质抵押品增加需求</li>
+                <li><strong>通证增加借贷流动性</strong>: 更多资产吸引更多流动性提供者</li>
+                <li><strong>利率影响投资决策</strong>: 借贷利率变化为套利机会创造市场信号</li>
+            </ol>
+        
+            <p>经济模拟显示，这种协同效应可以为平台总收入贡献20-30%的额外增长。</p>
+        </div>
             <!-- 更多内容将在后续添加 -->
         </div>
 
