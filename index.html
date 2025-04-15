@@ -264,6 +264,145 @@
                 </div>
             </div>
         </div>
+
+        <div class="content-section" id="economic-model">
+            <h2>3. Pachira 双引擎经济模型</h2>
+            
+            <p>Pachira 的经济系统由两个互补的价值引擎驱动，它们共同创造一个自我强化的经济循环:</p>
+        
+            <h3>3.1 系统经济流模型</h3>
+            
+            <div class="chart-container">
+                <svg class="svg-chart" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+                    <!-- 经济流模型图 -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+                        </marker>
+                    </defs>
+                    
+                    <!-- 节点 -->
+                    <!-- 资产持有者 -->
+                    <circle cx="120" cy="100" r="40" fill="#1E5631" opacity="0.8"></circle>
+                    <text x="120" y="100" text-anchor="middle" font-size="12" fill="white" font-weight="bold">资产持有者</text>
+                    
+                    <!-- 资产通证化引擎 -->
+                    <rect x="240" y="60" width="120" height="80" rx="10" ry="10" fill="#D4AF37" opacity="0.8"></rect>
+                    <text x="300" y="100" text-anchor="middle" font-size="12" fill="white" font-weight="bold">资产通证化引擎</text>
+                    
+                    <!-- 通证持有者/投资者 -->
+                    <circle cx="480" cy="100" r="40" fill="#1E5631" opacity="0.8"></circle>
+                    <text x="480" y="95" text-anchor="middle" font-size="12" fill="white" font-weight="bold">通证持有者</text>
+                    <text x="480" y="110" text-anchor="middle" font-size="12" fill="white" font-weight="bold">投资者</text>
+                    
+                    <!-- Pachira平台 -->
+                    <rect x="350" y="180" width="100" height="60" rx="10" ry="10" fill="#1A3A5E" opacity="0.8"></rect>
+                    <text x="400" y="210" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Pachira平台</text>
+                    
+                    <!-- 去中心化借贷池 -->
+                    <rect x="580" y="180" width="120" height="60" rx="10" ry="10" fill="#D4AF37" opacity="0.8"></rect>
+                    <text x="640" y="210" text-anchor="middle" font-size="12" fill="white" font-weight="bold">去中心化借贷池</text>
+                    
+                    <!-- 连接线 -->
+                    <!-- 资产持有者 -> 资产通证化引擎 -->
+                    <line x1="160" y1="100" x2="240" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="200" y="90" text-anchor="middle" font-size="10">实体资产</text>
+                    
+                    <!-- 资产通证化引擎 -> 通证持有者 -->
+                    <line x1="360" y1="100" x2="440" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="400" y="90" text-anchor="middle" font-size="10">通证</text>
+                    
+                    <!-- 通证持有者 -> 去中心化借贷池 -->
+                    <line x1="480" y1="140" x2="590" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="520" y="170" text-anchor="middle" font-size="10">抵押品/流动性</text>
+                    
+                    <!-- 去中心化借贷池 -> 通证持有者 -->
+                    <line x1="600" y1="180" x2="510" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="580" y="150" text-anchor="middle" font-size="10">贷款/收益</text>
+                    
+                    <!-- 资产通证化引擎 -> Pachira平台 -->
+                    <line x1="300" y1="140" x2="370" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="320" y="170" text-anchor="middle" font-size="10">通证化费用</text>
+                    
+                    <!-- 去中心化借贷池 -> Pachira平台 -->
+                    <line x1="580" y1="210" x2="450" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="515" y="200" text-anchor="middle" font-size="10">借贷利差</text>
+                    
+                    <!-- 通证持有者 -> Pachira平台 -->
+                    <line x1="450" y1="130" x2="410" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></line>
+                    <text x="410" y="150" text-anchor="middle" font-size="10">管理费</text>
+                    
+                    <!-- Pachira平台 -> 资产持有者 -->
+                    <path d="M 350 210 C 250 210 250 150 180 110" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></path>
+                    <text x="250" y="230" text-anchor="middle" font-size="10">资产管理服务</text>
+                    
+                    <!-- 资产通证化引擎 -> 资产持有者 -->
+                    <path d="M 240 80 C 200 50 160 50 120 60" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"></path>
+                    <text x="180" y="40" text-anchor="middle" font-size="10">流动性溢价</text>
+                </svg>
+            </div>
+        
+            <p>系统价值流包括:</p>
+            
+            <ol>
+                <li><strong>资产引入</strong>: 资产持有者将实体资产引入平台</li>
+                <li><strong>价值转化</strong>: 通过通证化将资产价值转化为区块链上的数字表示</li>
+                <li><strong>价值分配</strong>: 通过智能合约自动分配资产产生的收益</li>
+                <li><strong>流动性增强</strong>: 通过去中心化借贷市场提供流动性和额外收益机会</li>
+                <li><strong>价值捕获</strong>: 通过资产通证化费用、管理费和借贷利差捕获部分价值</li>
+            </ol>
+        
+            <h3>3.2 参与者经济激励模型</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>参与者</th>
+                        <th>主要经济激励</th>
+                        <th>次要经济激励</th>
+                        <th>价值捕获机制</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>资产持有者</td>
+                        <td>流动性溢价 (15-30%)</td>
+                        <td>持续管理费分享</td>
+                        <td>通证所有权 + 收益分成</td>
+                    </tr>
+                    <tr>
+                        <td>投资者</td>
+                        <td>资产收益 (5-12%)</td>
+                        <td>资本增值潜力</td>
+                        <td>通证收益 + 价格升值</td>
+                    </tr>
+                    <tr>
+                        <td>流动性提供者</td>
+                        <td>借贷收益 (4-7%)</td>
+                        <td>平台激励</td>
+                        <td>利息收入 + 平台奖励</td>
+                    </tr>
+                    <tr>
+                        <td>平台</td>
+                        <td>通证化费用 (1.5-2%)</td>
+                        <td>管理费 (0.5-1.5%)</td>
+                        <td>多层次收费结构</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p>每个参与者的激励设计确保了其行为自然地增强整个系统的健康和增长。</p>
+        
+            <h3>3.3 经济循环动力学</h3>
+            
+            <p>平台的经济动力学展现出正向循环特性:</p>
+            
+            <div class="formula">
+                更多资产 → 更多投资机会 → 更多投资者 → 更大流动性 → 更高价值 → 吸引更多资产 → ...
+            </div>
+        
+            <p>我们的经济模型显示，一旦平台达到临界质量(约5000万美元的管理资产)，这种正向循环将自我强化，推动加速增长。</p>
+        </div>
             <!-- 更多内容将在后续添加 -->
         </div>
 
