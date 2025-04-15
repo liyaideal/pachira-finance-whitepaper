@@ -411,10 +411,68 @@ tr:nth-child(even) {
     
     .toc-section,
     .content-section {
-        padding: 2rem;
+        padding: 2rem 1.5rem;
     }
     
+    /* 增加表格响应式处理 */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* 图表响应式处理 */
+    .svg-chart {
+        height: auto;
+        max-height: 280px;
+    }
+    
+    /* 确保两列布局在移动设备上变为单列 */
     .two-column {
         flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    /* 调整卡片在移动设备上的边距 */
+    .asset-card {
+        margin-bottom: 0;
+    }
+    
+    /* 调整高亮框在移动设备上的内边距 */
+    .highlight-box {
+        padding: 1.25rem;
+    }
+    
+    /* 确保强调文本在小屏幕上更清晰 */
+    .formula {
+        font-size: 0.9rem;
+        padding: 0.75rem;
     }
 }
+
+/* 添加小屏幕设备的额外调整 */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .toc-list .page-number {
+        display: none;
+    }
+    
+    .toc-list .toc-line {
+        display: none;
+    }
+    
+    .toc-list li {
+        margin-bottom: 0.6rem;
+    }
+    
+    /* 调整表格字体大小 */
+    th, td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
