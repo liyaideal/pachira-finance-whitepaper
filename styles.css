@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #1E5631; /* 深绿色 - 代表稳定和财富 */
-    --secondary-color: #D4AF37; /* 金色 - 表达价值和资产 */
-    --tertiary-color: #1A3A5E; /* 深蓝 - 代表科技和创新 */
-    --light-bg: #F5F5F5; /* 浅灰 - 用于背景和间隔 */
+    --primary-color: #0F2C56; /* 主色 - 深蓝专业感 */
+    --secondary-color: #F6F1EA; /* 辅色 - 背景/图标反差底色 */
+    --accent-color: #F59E0B; /* 强调色 - 高亮提示、CTA按钮 */
+    --light-bg: #F8F8F8; /* 浅灰 - 用于背景和间隔 */
     --text-color: #333333;
     --light-text: #FFFFFF;
 }
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--light-bg);
@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(15, 44, 86, 0.1);
 }
 
 .header {
@@ -43,13 +43,13 @@ body {
     top: 0;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, var(--secondary-color) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
     opacity: 0.1;
     border-radius: 50%;
 }
 
 .header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
@@ -57,7 +57,7 @@ body {
 }
 
 .header h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -88,7 +88,7 @@ body {
 }
 
 .company-name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -119,7 +119,7 @@ body {
 }
 
 .toc-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     font-weight: 600;
@@ -149,7 +149,7 @@ body {
 }
 
 .toc-list .page-number {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -165,18 +165,18 @@ body {
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--accent-color);
     font-weight: 600;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--tertiary-color);
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
+    color: var(--primary-color);
     font-size: 1.4rem;
     margin: 2rem 0 1rem;
     font-weight: 600;
@@ -188,8 +188,8 @@ p {
 }
 
 .highlight-box {
-    background-color: var(--light-bg);
-    border-left: 4px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-left: 4px solid var(--accent-color);
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 0 4px 4px 0;
@@ -197,7 +197,7 @@ p {
 
 .highlight-box h4 {
     color: var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -222,11 +222,11 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(246, 241, 234, 0.5);
 }
 
 .chart-container {
-    background-color: var(--light-bg);
+    background-color: var(--secondary-color);
     padding: 1.5rem;
     border-radius: 4px;
     margin: 2rem 0;
@@ -240,7 +240,7 @@ tr:nth-child(even) {
 }
 
 .footer {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     color: var(--light-text);
     padding: 3rem;
     text-align: center;
@@ -267,10 +267,10 @@ tr:nth-child(even) {
 }
 
 .formula {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(15, 44, 86, 0.05);
     padding: 1rem;
     border-radius: 4px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Inter', monospace;
     margin: 1.5rem 0;
     text-align: center;
 }
@@ -289,15 +289,15 @@ tr:nth-child(even) {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(15, 44, 86, 0.08);
 }
 
 .asset-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .asset-detail {
@@ -305,7 +305,7 @@ tr:nth-child(even) {
     justify-content: space-between;
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .asset-detail span:first-child {
@@ -316,18 +316,35 @@ tr:nth-child(even) {
     font-weight: 600;
 }
 
+.asset-icon {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.asset-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
 .case-study {
-    background-color: rgba(26, 58, 94, 0.05);
-    border: 1px solid rgba(26, 58, 94, 0.1);
+    background-color: rgba(15, 44, 86, 0.05);
+    border: 1px solid rgba(15, 44, 86, 0.1);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 2rem 0;
 }
 
 .case-study h4 {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(26, 58, 94, 0.1);
+    border-bottom: 1px solid rgba(15, 44, 86, 0.1);
     padding-bottom: 0.5rem;
 }
 
@@ -344,12 +361,12 @@ tr:nth-child(even) {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(15, 44, 86, 0.08);
 }
 
 .team-member-photo {
     height: 200px;
-    background-color: var(--light-bg);
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,15 +377,15 @@ tr:nth-child(even) {
 }
 
 .team-member-name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', 'Source Han Sans SC', '思源黑体', 'Noto Sans SC', sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .team-member-title {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
