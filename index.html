@@ -1192,6 +1192,151 @@
                 </svg>
             </div>
         </div>
+
+        <div class="content-section" id="risk-management">
+            <h2>9. 风险管理经济学</h2>
+            
+            <h3>9.1 风险分层与定价</h3>
+            
+            <p>Pachira采用多层次风险管理方法，每层都有明确的经济模型:</p>
+            
+            <div class="two-column">
+                <div class="asset-card">
+                    <div class="asset-title">资产层风险</div>
+                    <ul>
+                        <li>评估机制: 独立第三方 + 内部尽调</li>
+                        <li>风险溢价定价: +50-200个基点，根据资产评级</li>
+                        <li>多元化要求: 单一资产不超过总池的20%</li>
+                    </ul>
+                </div>
+                
+                <div class="asset-card">
+                    <div class="asset-title">市场层风险</div>
+                    <ul>
+                        <li>流动性缓冲机制: 维持10-15%的流动性储备</li>
+                        <li>价格波动缓冲: 稳定准备金占资产价值的2-3%</li>
+                        <li>市场冲击缓释: 临时交易限制机制</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="asset-card" style="margin-top: 2rem;">
+                <div class="asset-title">系统层风险</div>
+                <ul>
+                    <li>安全储备金: 平台收入的15%</li>
+                    <li>保险覆盖: 针对重大风险事件</li>
+                    <li>渐进治理转移: 降低中心化故障风险</li>
+                </ul>
+            </div>
+        
+            <h3>9.2 资本效率最优化</h3>
+            
+            <p>平台设计实现资本效率与风险缓冲的平衡:</p>
+            
+            <div class="chart-container">
+                <svg class="svg-chart" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+                    <!-- 背景 -->
+                    <rect x="50" y="50" width="700" height="200" fill="#f5f5f5" rx="5" ry="5"></rect>
+                    
+                    <!-- 标题 -->
+                    <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold">资本效率分析</text>
+                    
+                    <!-- 轴线 -->
+                    <line x1="100" y1="200" x2="700" y2="200" stroke="#333" stroke-width="2"></line>
+                    <line x1="100" y1="200" x2="100" y2="60" stroke="#333" stroke-width="2"></line>
+                    
+                    <!-- 标签 -->
+                    <text x="400" y="230" text-anchor="middle" font-size="14" font-weight="bold">资本配置比例</text>
+                    <text x="70" y="130" text-anchor="middle" font-size="14" font-weight="bold" transform="rotate(-90, 70, 130)">风险-收益评分</text>
+                    
+                    <!-- 数据点 -->
+                    <circle cx="180" cy="120" r="40" fill="#1E5631" opacity="0.2"></circle>
+                    <circle cx="180" cy="120" r="5" fill="#1E5631"></circle>
+                    <text x="180" y="110" text-anchor="middle" font-size="12" font-weight="bold">安全储备</text>
+                    <text x="180" y="125" text-anchor="middle" font-size="10">5% 分配</text>
+                    <text x="180" y="140" text-anchor="middle" font-size="10">低风险</text>
+                    
+                    <circle cx="320" cy="150" r="50" fill="#1A3A5E" opacity="0.2"></circle>
+                    <circle cx="320" cy="150" r="5" fill="#1A3A5E"></circle>
+                    <text x="320" y="140" text-anchor="middle" font-size="12" font-weight="bold">流动性储备</text>
+                    <text x="320" y="155" text-anchor="middle" font-size="10">10% 分配</text>
+                    <text x="320" y="170" text-anchor="middle" font-size="10">中低风险</text>
+                    
+                    <circle cx="500" cy="100" r="70" fill="#D4AF37" opacity="0.2"></circle>
+                    <circle cx="500" cy="100" r="5" fill="#D4AF37"></circle>
+                    <text x="500" y="90" text-anchor="middle" font-size="12" font-weight="bold">核心资产配置</text>
+                    <text x="500" y="105" text-anchor="middle" font-size="10">65% 分配</text>
+                    <text x="500" y="120" text-anchor="middle" font-size="10">中等风险-高收益</text>
+                    
+                    <circle cx="650" cy="70" r="35" fill="#1E5631" opacity="0.2"></circle>
+                    <circle cx="650" cy="70" r="5" fill="#1E5631"></circle>
+                    <text x="650" y="60" text-anchor="middle" font-size="12" font-weight="bold">增长配置</text>
+                    <text x="650" y="75" text-anchor="middle" font-size="10">20% 分配</text>
+                    <text x="650" y="90" text-anchor="middle" font-size="10">高风险-高收益</text>
+                    
+                    <!-- 资本效率曲线 -->
+                    <path d="M 100 180 C 150 170, 200 150, 250 130 C 300 110, 350 100, 400 90 C 500 70, 600 65, 700 60" 
+                          fill="none" stroke="#1E5631" stroke-width="3" stroke-dasharray="5,3"></path>
+                    
+                    <!-- 最优资本效率点 -->
+                    <circle cx="425" cy="88" r="8" fill="#D4AF37"></circle>
+                    <text x="425" y="65" text-anchor="middle" font-size="12" font-weight="bold">最优资本效率点</text>
+                    <line x1="425" y1="75" x2="425" y2="80" stroke="#333" stroke-width="1"></line>
+                    
+                    <!-- 杠杆倍数标记 -->
+                    <line x1="425" y1="88" x2="425" y2="200" stroke="#333" stroke-width="1" stroke-dasharray="3,3"></line>
+                    <text x="425" y="215" text-anchor="middle" font-size="12">最优杠杆倍数: 1.75x</text>
+                </svg>
+            </div>
+        
+            <p><strong>关键资本比率</strong>:</p>
+            <ul>
+                <li>目标安全储备率: 5%</li>
+                <li>最低流动性比率: 10%</li>
+                <li>最优杠杆倍数: 1.5-2x</li>
+            </ul>
+        
+            <h3>9.3 情景压力测试</h3>
+            
+            <p>经济模型在多种压力情景下的表现:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>情景</th>
+                        <th>描述</th>
+                        <th>资产价值影响</th>
+                        <th>平台收入影响</th>
+                        <th>恢复时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>中度衰退</td>
+                        <td>GDP -2%, 利率+2%</td>
+                        <td>-10%</td>
+                        <td>-15%</td>
+                        <td>6-12个月</td>
+                    </tr>
+                    <tr>
+                        <td>严重危机</td>
+                        <td>GDP -5%, 地产价值-30%</td>
+                        <td>-25%</td>
+                        <td>-40%</td>
+                        <td>12-24个月</td>
+                    </tr>
+                    <tr>
+                        <td>监管冲击</td>
+                        <td>主要市场监管收紧</td>
+                        <td>-15%</td>
+                        <td>-30%</td>
+                        <td>9-18个月</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p>在所有测试情景中，平台设计显示出强大的经济韧性，能够保持运营并逐步恢复。</p>
+        </div>
             <!-- 更多内容将在后续添加 -->
         </div>
 
