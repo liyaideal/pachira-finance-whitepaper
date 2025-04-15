@@ -403,6 +403,114 @@
         
             <p>我们的经济模型显示，一旦平台达到临界质量(约5000万美元的管理资产)，这种正向循环将自我强化，推动加速增长。</p>
         </div>
+
+        <div class="content-section" id="tokenization-economics">
+            <h2>4. 资产通证化的经济学</h2>
+            
+            <h3>4.1 资产定价机制</h3>
+            
+            <p>Pachira 的资产定价采用多因素模型，确保价格公平反映基础价值:</p>
+            
+            <div class="highlight-box">
+                <h4>基础定价公式:</h4>
+                <div class="formula">
+                    通证价值 = (资产基础价值 + 未来现金流现值 + 流动性溢价) / 通证总数
+                </div>
+            </div>
+        
+            <p>关键考量因素:</p>
+            <ul>
+                <li><strong>资产评估</strong>: 由独立第三方进行专业评估</li>
+                <li><strong>现金流折现</strong>: 使用行业标准DCF模型，根据资产类型调整折现率</li>
+                <li><strong>流动性调整</strong>: 根据市场深度和交易活跃度动态调整</li>
+            </ul>
+        
+            <h3>4.2 收益分配模型</h3>
+            
+            <div class="chart-container">
+                <svg class="svg-chart" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+                    <!-- 背景 -->
+                    <rect x="50" y="50" width="700" height="200" fill="#f5f5f5" rx="5" ry="5"></rect>
+                    
+                    <!-- 标题 -->
+                    <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold">资产收益分配结构</text>
+                    
+                    <!-- 收益流程图 -->
+                    <rect x="100" y="70" width="600" height="50" fill="#1E5631" opacity="0.8"></rect>
+                    <text x="400" y="100" text-anchor="middle" font-size="16" fill="white" font-weight="bold">资产总收益 (6-8%)</text>
+                    
+                    <!-- 箭头定义 -->
+                    <defs>
+                        <marker id="flow-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+                        </marker>
+                    </defs>
+                    
+                    <path d="M 400 120 L 400 140" stroke="#333" stroke-width="2" marker-end="url(#flow-arrow)"></path>
+                    
+                    <!-- 收益分配层 -->
+                    <rect x="100" y="140" width="120" height="40" fill="#D4AF37" opacity="0.8"></rect>
+                    <text x="160" y="165" text-anchor="middle" font-size="14" fill="white" font-weight="bold">平台费率</text>
+                    <text x="160" y="185" text-anchor="middle" font-size="12" fill="white">(0.5-1.5%)</text>
+                    
+                    <rect x="220" y="140" width="120" height="40" fill="#1A3A5E" opacity="0.8"></rect>
+                    <text x="280" y="165" text-anchor="middle" font-size="14" fill="white" font-weight="bold">储备金率</text>
+                    <text x="280" y="185" text-anchor="middle" font-size="12" fill="white">(0.5-1%)</text>
+                    
+                    <rect x="340" y="140" width="360" height="40" fill="#1E5631" opacity="0.8"></rect>
+                    <text x="520" y="165" text-anchor="middle" font-size="14" fill="white" font-weight="bold">投资者收益</text>
+                    <text x="520" y="185" text-anchor="middle" font-size="12" fill="white">(5-6.5%)</text>
+                    
+                    <path d="M 160 180 L 160 220" stroke="#333" stroke-width="2" marker-end="url(#flow-arrow)"></path>
+                    <path d="M 280 180 L 280 220" stroke="#333" stroke-width="2" marker-end="url(#flow-arrow)"></path>
+                    <path d="M 520 180 L 520 220" stroke="#333" stroke-width="2" marker-end="url(#flow-arrow)"></path>
+                    
+                    <!-- 最终分配 -->
+                    <rect x="100" y="220" width="120" height="40" fill="#D4AF37" opacity="0.6"></rect>
+                    <text x="160" y="245" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">平台运营</text>
+                    <text x="160" y="260" text-anchor="middle" font-size="10" fill="#333">(技术开发、市场推广)</text>
+                    
+                    <rect x="220" y="220" width="120" height="40" fill="#1A3A5E" opacity="0.6"></rect>
+                    <text x="280" y="245" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">系统安全储备</text>
+                    <text x="280" y="260" text-anchor="middle" font-size="10" fill="#333">(风险缓冲、应急保障)</text>
+                    
+                    <rect x="340" y="220" width="180" height="40" fill="#1E5631" opacity="0.6"></rect>
+                    <text x="430" y="245" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">通证收益分配</text>
+                    <text x="430" y="260" text-anchor="middle" font-size="10" fill="#333">(直接派发给通证持有者)</text>
+                    
+                    <rect x="520" y="220" width="180" height="40" fill="#1E5631" opacity="0.6"></rect>
+                    <text x="610" y="245" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">资本增值</text>
+                    <text x="610" y="260" text-anchor="middle" font-size="10" fill="#333">(资产价值增长)</text>
+                </svg>
+            </div>
+        
+            <div class="highlight-box">
+                <h4>标准分配公式:</h4>
+                <div class="formula">
+                    投资者收益 = 总资产收益 × (1 - 平台费率 - 储备金率)
+                </div>
+            </div>
+        
+            <p>典型情景下:</p>
+            <ul>
+                <li>总资产收益: 6-8%</li>
+                <li>平台费率: 0.5-1.5%</li>
+                <li>储备金率: 0.5-1%</li>
+                <li>投资者实际收益: 5-6.5%</li>
+            </ul>
+        
+            <h3>4.3 流动性经济学</h3>
+            
+            <p>通证化显著提升资产流动性，创造多层次经济价值:</p>
+            
+            <ol>
+                <li><strong>即时流动性价值</strong>: 提供传统资产无法实现的即时买卖能力</li>
+                <li><strong>分数所有权价值</strong>: 降低参与门槛，扩大潜在买家群体</li>
+                <li><strong>全球市场价值</strong>: 移除地域限制，接入全球资本池</li>
+            </ol>
+        
+            <p>我们的模型表明，这些因素共同为资产创造平均15-25%的流动性溢价。</p>
+        </div>
             <!-- 更多内容将在后续添加 -->
         </div>
 
